@@ -13,9 +13,11 @@ Este sitio, le permitirá obtener una vista previa del tema con un nuevo color e
 `theme-chalk` esta escrito en SCSS. Si su proyecto también utiliza SCSS, puede cambiar las variables de estilos de Element. Para ello, solo necesita crear un nuevo archivo de estilos, por ejemplo, `element-variables.scss`:
 
 ```html
-/* Color del tema */ $--color-primary: teal; /* Ubicación de la fuente,
-obligatoria */ $--font-path: '~element-plus/lib/theme-chalk/fonts'; @import
-"~element-plus/packages/theme-chalk/src/index";
+/* Color del tema */ 
+$--color-primary: teal; 
+/* Ubicación de la fuente, obligatoria */ 
+$--font-path: '~element-plus/theme-chalk/fonts'; 
+@import "~element-plus/packages/theme-chalk/src/index";
 ```
 
 Entonces, en el archivo principal del proyecto, importe este archivo de estilos en lugar de los estilos de Element:
