@@ -13,9 +13,11 @@ The above website enables you to preview theme of a new theme color in real-time
 `theme-chalk` is written in SCSS. If your project also uses SCSS, you can directly change Element Plus style variables. Create a new style file, e.g. `element-variables.scss`:
 
 ```html
-/* theme color */ $--color-primary: teal; /* icon font path, required */
-$--font-path: '~element-plus/lib/theme-chalk/fonts'; @import
-"~element-plus/packages/theme-chalk/src/index";
+/* theme color */ 
+$--color-primary: teal; 
+/* icon font path, required */
+$--font-path: '~element-plus/theme-chalk/fonts'; 
+@import "~element-plus/packages/theme-chalk/src/index";
 ```
 
 Then in the entry file of your project, import this style file instead of Element's built CSS:
