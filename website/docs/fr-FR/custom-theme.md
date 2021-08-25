@@ -13,9 +13,11 @@ Le site précédent vous permet de visualiser et de télécharger un nouveau th�
 `theme-chalk` est écrit en SCSS. Si votre projet utilises SCSS, vous pouvez changer directement les variables d'Élément. Créez un nouveau fichier, e.g. `element-variables.scss`:
 
 ```html
-/* couleur du thème */ $--color-primary: teal; /* chemin vers le fichier de
-police, requis */ $--font-path: '~element-plus/lib/theme-chalk/fonts'; @import
-"~element-plus/packages/theme-chalk/src/index";
+/* couleur du thème */ 
+$--color-primary: teal; 
+/* chemin vers le fichier de police, requis */ 
+$--font-path: '~element-plus/theme-chalk/fonts'; 
+@import "~element-plus/packages/theme-chalk/src/index";
 ```
 
 Puis dans le fichier d'entrée, importez ce style au lieu de celui d'Element:
