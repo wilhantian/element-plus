@@ -13,9 +13,11 @@ Element Plus のテーマカラーを変更したいなら、[テーマプレビ
 `theme-chalk` は SCSS で書かれています。プロジェクトでも SCSS を使用している場合は、Element Plus のスタイル変数を直接変更することができます。例えば `element-variables.scss` のように、新しいスタイルファイルを作成します :
 
 ```html
-/* theme color */ $--color-primary: teal; /* icon font path, required */
-$--font-path: '~element-plus/lib/theme-chalk/fonts'; @import
-"~element-plus/packages/theme-chalk/src/index";
+/* theme color */ 
+$--color-primary: teal; 
+/* icon font path, required */
+$--font-path: '~element-plus/theme-chalk/fonts'; 
+@import "~element-plus/packages/theme-chalk/src/index";
 ```
 
 そして、プロジェクトのエントリーファイルで、Element Plus の内蔵 CSS の代わりにこのスタイルファイルをインポートします。:
